@@ -2,7 +2,6 @@ var imageLocation = "./images/";
 var imageType = ".png";
 var movieData = new Map();
 
-const container = document.getElementById('container');
 var request = new XMLHttpRequest();
 request.onreadystatechange = function() {
     if (request.readyState == XMLHttpRequest.DONE) {
@@ -63,4 +62,3 @@ request.onload = function() {
 request.send();
 
 //create a way to sort by release date and alphabet
-

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><%= title %></title>
+	<title id="title"><%= title %></title>
 	<%- include ./partials/bootstrap.ejs %>
 </head>
 <%- include ./partials/navbar.ejs %>
@@ -16,7 +16,7 @@
 		</div>
 	</div>
 	<div class="row split left">
-		<div class="col-xs-6 col text-center">
+		<div class="col-xs-12 col text-center">
 			<figure class="justify-content-md-center" id="img-div">
     			<img id="image" src="./images/studioghibli.png" onerror="onerror=null;src='./images/imagenotfound.png'" 
       			class="img-fluid img-thumbnail img-max"
@@ -30,9 +30,8 @@ Nam et posuere neque. Duis vel tincidunt erat. Pellentesque eget sagittis felis.
   			</figure>
   		</div>
   	</div>
-  	<div class="split right">
   	<div class="row">
-  		<div class="col-xs-6 col text-center">
+  		<div class="col-xs-12 col text-center">
   			<section id="tribute-info">
     			<h3 class ="font-italic" id="headline">Movies</h3>
 			</section>
@@ -47,9 +46,9 @@ Nam et posuere neque. Duis vel tincidunt erat. Pellentesque eget sagittis felis.
 	<div class="col-xs-1"></div>
 	</div>
 </div>
-</div>
 <%- include ./partials/footer.ejs %>
 </main>
 <%- include ./partials/scripts.ejs %>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
